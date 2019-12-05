@@ -28,7 +28,7 @@ cmd: pulp-tools
 pulp-tools:
 	git submodule update --init
 
-.PHONY: pulp-tools pulpissimo
+.PHONY: all build distclean clean env deps cmd pulp-tools
 
 autotiler: pulp-tools
 	export GWT_AUTOTILER=1 && source init.sh && ./scripts/get-autotiler
